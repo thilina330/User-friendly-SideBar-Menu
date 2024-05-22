@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Poppins";
+        src: url("../Font/Poppins-Medium.ttf"); /* Corrected path */
+    }
+    * {
+        padding: 0;
+        margin: 0; /* Added margin reset for consistency */
+        box-sizing: border-box;
+        font-family: "Poppins";
+    }
+
+    .sidebar-container {
+        @apply bg-glass h-[96%] w-[20rem] rounded-3xl ml-6 p-4 border transition-all duration-500 border-solid border-glass relative;
+    }
+    .sidebar{
+        @apply flex items-center p-4 mt-2 transition-all duration-300 rounded-lg hover:bg-white ;
+    }
+}
